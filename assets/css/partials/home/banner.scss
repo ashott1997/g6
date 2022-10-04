@@ -186,4 +186,78 @@
   background: $under_banner_row_back;
   padding: 14px 0 16px;
   margin-top: 16px;
+  p{
+    width: 90%;
+    span{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $black;
+
+      @media(max-width: 1100px){
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      @media(max-width: 960px){
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &:not(:first-child){
+        font-family: $nunito;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 109.9%;
+        letter-spacing: -0.03em;
+        color: $link;
+        margin-left: 32px;
+        text-transform: lowercase;
+
+        @media(max-width: 767px){
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    a{
+      font-family: $nunito;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      letter-spacing: 0.03em;
+      color: $black;
+      margin-left: 32px;
+      transition: .3s ease-in-out;
+
+      @media(max-width: 1100px){
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @media(max-width: 1100px){
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      @media(max-width: 767px){
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      &:hover{
+        color: $blue;
+      }
+
+      &:is(:first-child){
+        margin-bottom: 48px;
+      }
+    }
+  }
 }

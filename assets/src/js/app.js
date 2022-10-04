@@ -1,1 +1,2 @@
-import "./home.js"
+import 'swiper/css';
+import './prodSlider.js'

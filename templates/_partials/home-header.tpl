@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="row d-flex justify-content-center align-items-center under-banner">
-        <p class="d-flex justify-content-center align-items-center">
+        <p class="d-flex justify-content-center align-items-center flex-column flex-md-row text-center m-0">
             <span class="text-uppercase">Rękodzieła, które pokocha każde dziecko</span>
             <a href="#" class="text-decoration-underline text-uppercase">KUP</a>
             <span>lub</span>
