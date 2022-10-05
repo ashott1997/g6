@@ -46,11 +46,10 @@
             </div>
             <div class="infos">
                 tel.  {if $contact_infos.phone}
-                    <br>
-                    <a href="tel:$contact_infos.phone">$contact_infos.phone</a>
+                    <a href="tel:$contact_infos.phone">{$contact_infos.phone}</a>
                 {/if}
+                <br>
                 e-mail: {if $contact_infos.email && $display_email}
-                    <br>
                     <a href="mailto:{$contact_infos.email|cat}">{$contact_infos.email|cat}</a>
                 {/if}
             </div>

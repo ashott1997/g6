@@ -56,15 +56,15 @@
 {*</div>*}
 
 
-<div class="row d-flex justify-content-center">
+<div class="row d-flex justify-content-center footer-row">
     <div class="wrapper row">
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5 col-xxl-3">
             {hook h="displayFooterBefore"}
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-5 col-lg-5 col-xl-5 col-xxl-3">
             <div class="block-footer-list">
                 <h4>Informacje dodatkowe</h4>
-                <ul>
+                <ul class="p-0">
                    <li><a href="#">Regulamin</a></li>
                     <li><a href="#">Zasady współpracy</a></li>
                     <li><a href="#">Zasady dostaw</a></li>
@@ -72,7 +72,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-2">
+        <div class="col-12 col-md-2 col-lg-2 col-xl-2">
             <div class="block-footer-list">
                 <h4>odwiedź nas na:</h4>
                 <div class="socs d-flex flex-row">
@@ -88,13 +88,13 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-12">
+        <div class="col-lg-12 col-xl-12 col-xxl-4">
             {hook h="displayFooter"}
         </div>
     </div>
 </div>
-<div class="row d-flex justify-content-center">
-    <div class="wrapper d-flex align-items-center">
+<div class="row d-flex justify-content-center footer-row footer-bottom"">
+    <div class="wrapper d-flex align-items-center ">
         <span class="text-uppercase">COPYRIGHTS 2022</span>
         <a href="#" class="text-uppercase">PRIVACY POLICY</a>
         <a href="https://snws.pl" class="text-uppercase">CREATED BY <svg width="60" height="14" viewBox="0 0 60 14" fill="none" xmlns="http://www.w3.org/2000/svg">
