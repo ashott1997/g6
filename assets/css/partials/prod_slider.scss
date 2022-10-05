@@ -1,0 +1,33 @@
+@import "css/variables";
+
+.prod-slider{
+  margin: 89px 0 155px;
+  .img-wrapper{
+
+    img{
+      object-position: center;
+      object-fit: contain;
+    }
+
+
+  }
+  h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 109.9%;
+    letter-spacing: -0.03em;
+    color: $black ;
+    margin:61px 0 15px;
+  }
+
+  .price{
+    font-family: $nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 31px;
+    letter-spacing: 0.045em;
+    color: $link ;
+  }
+}

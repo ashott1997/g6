@@ -1,0 +1,60 @@
+@import "css/variables";
+
+#custom-text{
+  padding: 215px 5% 160px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+
+
+  h3,h4,a{
+    color: $white;
+    background: rgba(0, 12, 3, 0.25);
+    border-radius: 3px;
+    padding: 3px 8px;
+    display: inline-block;
+
+  }
+  h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 119.4%;
+    letter-spacing: 0.045em;
+
+    @media(max-width: 767px){
+      font-size: 25px;
+    }
+  }
+
+  h4{
+    font-family: $nunito;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    margin: 6px 0 25px;
+
+    @media(max-width: 767px){
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+
+  a{
+    font-family: $nunito;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    @media(max-width: 767px){
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
