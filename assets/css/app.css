@@ -7,6 +7,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito:wght@500;600;700&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
@@ -10864,7 +10866,7 @@ body {
   cursor: pointer;
 }
 
-.nav-right a:not(:last-child) {
+.nav-right > *:not(:last-child) {
   margin-right: 20px;
   text-decoration: none;
 }
@@ -10876,6 +10878,13 @@ body {
   text-transform: uppercase;
   color: #828380;
 }
+.nav-right .burger {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.nav-right .burger:hover {
+  opacity: 0.8;
+}
 
 .burger-menu {
   position: fixed;
@@ -10886,6 +10895,71 @@ body {
   height: 100vh;
   background: #91A2FF;
   z-index: 100;
+  transition: 0.3s ease-in-out;
+  transform: scale(0.5) translateY(150%);
+}
+.burger-menu .close {
+  margin-top: 30px;
+  margin-right: 30px;
+  opacity: 1;
+}
+@media (max-width: 470px) {
+  .burger-menu .close {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+}
+.burger-menu .close svg path {
+  fill: #fff;
+}
+.burger-menu .pic-menu {
+  margin-top: 10vh;
+}
+@media (max-width: 470px) {
+  .burger-menu .pic-menu {
+    margin-top: 5vh;
+  }
+}
+@media (max-width: 575px) {
+  .burger-menu .pic-menu .left svg {
+    height: 80vh !important;
+  }
+}
+.burger-menu .pic-menu ul li a {
+  transition: 0.3s ease-in-out;
+}
+.burger-menu .pic-menu ul li a:hover {
+  color: #fff;
+}
+
+.active-burger-menu {
+  transform: scale(1) translateY(0);
+}
+
+#header .top-menu a[data-depth="0"]:hover {
+  color: #fff;
+}
+
+#header {
+  transition: 0.3s ease-in-out;
+}
+
+.header-fixed {
+  width: 100% !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 1000 !important;
+}
+
+.cart-icon-count > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #91A2FF;
+  color: #fff;
+  font-size: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .cat-icons .icon {
@@ -11542,19 +11616,16 @@ body {
   }
 }
 
-footer {
+#footer {
+  padding-top: 0;
   background: linear-gradient(166.6deg, #D8DAE3 -102.52%, #FBFBFB 82.36%, #E8E9EE 137.47%, #FBFBFB 137.47%);
   margin-top: 200px;
   padding-top: 0;
 }
 @media (max-width: 960px) {
-  footer {
+  #footer {
     margin-top: 100px;
   }
-}
-
-#footer {
-  padding-top: 0;
 }
 
 .footer-row .wrapper {
@@ -11744,4 +11815,196 @@ footer {
 }
 .footer-bottom span:is(:last-child), .footer-bottom a:is(:last-child) {
   margin-right: 0;
+}
+
+.main-container_custom {
+  width: 100%;
+}
+.main-container_custom > div {
+  width: 90%;
+}
+
+.btn-primary {
+  border: 3px solid #375674;
+  border-radius: 2px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #375674;
+  background: transparent;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #375674 !important;
+  color: #fff !important;
+  border: 3px solid #375674 !important;
+}
+
+.product-line-grid-body > .product-line-info > .label {
+  color: #504A4D;
+  text-decoration: none !important;
+  transition: 0.3s ease-in-out;
+}
+.product-line-grid-body > .product-line-info > .label:hover {
+  color: #91A2FF !important;
+}
+
+.product-price {
+  font-family: "Nunito", sans-serif;
+  color: #375674;
+  font-weight: bold;
+}
+
+.material-icons {
+  color: #504A4D;
+  transition: 0.3s ease-in-out;
+}
+.material-icons:hover {
+  color: #91A2FF;
+}
+
+.cart-summary-line .label {
+  color: #504A4D;
+  font-weight: bold;
+}
+
+.label {
+  color: #504A4D !important;
+  transition: 0.3s ease-in-out !important;
+  text-decoration: none;
+}
+.label:hover {
+  color: #375674 !important;
+}
+
+.cart-grid-body a.label:hover {
+  color: #375674 !important;
+}
+
+.card {
+  border-color: #375674;
+  border: 2px solid;
+}
+
+h1.step-title, .step-title.h1 {
+  color: #375674;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold !important;
+  display: flex;
+  align-items: center;
+}
+
+.form-control-valign, .form-control-valign > label {
+  display: flex;
+  align-items: center;
+}
+
+.custom-radio input[type=radio]:checked + span {
+  background: #375674;
+}
+
+.input-group {
+  width: 80%;
+}
+
+body#checkout .custom-checkbox span {
+  top: 3px;
+}
+
+body#checkout section.checkout-step .delivery-options .delivery-option {
+  background: linear-gradient(0deg, #F5FAFD, #F5FAFD), linear-gradient(0deg, rgba(225, 214, 219, 0.6), rgba(225, 214, 219, 0.6)), linear-gradient(165.36deg, #D8DAE3 -29.3%, #FBFBFB 58.13%, #FBFBFB 76.23%, #E8E9EE 136.37%);
+  border: none;
+}
+
+body#checkout #gift_message textarea, body#checkout #delivery textarea {
+  font-size: 14px;
+}
+
+.payment-options label span {
+  margin-top: -3px !important;
+}
+
+.payment-options .payment-option {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-my-account #content .links a {
+  text-decoration: none;
+}
+
+.page-my-account #content .links a span.link-item {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #504A4D;
+}
+
+.page-my-account #content .links a:hover i {
+  color: #91A2FF;
+}
+
+#wrapper .breadcrumb li a {
+  color: #504A4D;
+  transition: 0.3s ease-in-out;
+}
+
+.page-header h1, .page-header .h1 {
+  font-size: 25px;
+}
+
+footer.page-footer a {
+  color: #828380;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+footer.page-footer a:hover {
+  text-decoration: none;
+  color: #91A2FF;
+}
+
+form#login-form a,
+.no-account a,
+.register-form a {
+  color: #828380;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+form#login-form a:hover,
+.no-account a:hover,
+.register-form a:hover {
+  color: #91A2FF;
+}
+
+.page-header h1, .page-header .h1 {
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  line-height: 40px;
+  color: #91A2FF;
+  font-weight: bold;
+}
+
+#cms p, #cms a, #cms li {
+  font-size: 16px;
+  color: #504A4D;
+  line-height: 23px;
+  font-weight: 400;
+}
+#cms a {
+  color: #91A2FF;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+#cms a:hover {
+  color: #828380;
+  text-decoration: none;
+}
+#cms h1, #cms .h1, #cms h2, #cms .h2, #cms h3, #cms .h3, #cms h4, #cms .h4, #cms h5, #cms .h5, #cms h6, #cms .h6 {
+  color: #375674;
+  font-family: "Nunito", sans-serif;
+}
+#cms footer {
+  margin-top: 0px;
 }

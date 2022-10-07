@@ -77,13 +77,13 @@
                 <h4>odwiedź nas na:</h4>
                 <div class="socs d-flex flex-row">
                     <a href="#" class="social-icons">
-                        <img src="themes/G6_ZABAWKI/assets/svg/icons/twitter.svg" alt="">
+                        <img src="{$urls.base_url}themes/G6_ZABAWKI/assets/svg/icons/twitter.svg" alt="">
                     </a>
                     <a href="#" class="social-icons">
-                        <img src="themes/G6_ZABAWKI/assets/svg/icons/instagram.svg" alt="">
+                        <img src="{$urls.base_url}themes/G6_ZABAWKI/assets/svg/icons/instagram.svg" alt="">
                     </a>
                     <a href="#" class="social-icons">
-                        <img src="themes/G6_ZABAWKI/assets/svg/icons/facebook.svg" alt="">
+                        <img src="{$urls.base_url}themes/G6_ZABAWKI/assets/svg/icons/facebook.svg" alt="">
                     </a>
                 </div>
             </div>
@@ -109,4 +109,4 @@
         </a>
     </div>
 </div>
-<script src="themes/G6_ZABAWKI/assets/js/app.js"></script>
+<script src="{$urls.base_url}themes/G6_ZABAWKI/assets/js/app.js"></script>

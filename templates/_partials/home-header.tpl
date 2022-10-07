@@ -1,4 +1,4 @@
-<section id="home_banner d-flex flex-column">
+<section id="home_banner" class=" d-flex flex-column">
     <div class="row">
         <div class="col-12 col-md-8 p-0">
             <div class="banner position-relative h-100">

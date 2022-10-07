@@ -12,7 +12,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.min.css");
 /* harmony import */ var _prodSlider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./prodSlider.js */ "./src/js/prodSlider.js");
 
+ // burger menu
 
+var openBurger = document.querySelector('.burger');
+var burgerMenu = document.querySelector('.burger-menu');
+var html = document.querySelector('body');
+openBurger.addEventListener('click', function () {
+  burgerMenu.classList.add('active-burger-menu');
+  html.style.overflowY = 'hidden';
+});
+var closeBurger = document.querySelector('.burger-menu .close svg');
+closeBurger.addEventListener('click', function () {
+  burgerMenu.classList.remove('active-burger-menu');
+  html.style.overflowY = 'unset';
+});
+var headerNav = document.querySelector('#header');
+var homeBanner = document.querySelector('#home_banner');
+
+var showScrollTop = function showScrollTop() {
+  var distanceToTop = homeBanner.getBoundingClientRect().top;
+
+  if (distanceToTop < -600) {
+    headerNav.classList.add('header-fixed');
+  }
+
+  console.log(distanceToTop);
+
+  if (distanceToTop > -600) {
+    headerNav.classList.remove('header-fixed');
+  }
+};
+
+html.addEventListener('scroll', showScrollTop);
 
 /***/ }),
 

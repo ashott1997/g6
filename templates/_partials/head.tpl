@@ -79,7 +79,7 @@
 {block name='stylesheets'}
     {include file="_partials/stylesheets.tpl" stylesheets=$stylesheets}
 {/block}
-<link rel="stylesheet" href="themes/G6_ZABAWKI/assets/css/app.css">
+<link rel="stylesheet" href="{$urls.base_url}themes/G6_ZABAWKI/assets/css/app.css">
 {block name='javascript_head'}
     {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
 {/block}

@@ -59,51 +59,53 @@
     {if $page.page_name == 'index'}
         {include file="themes/G6_ZABAWKI/templates/home.tpl"}
     {/if}
+    {if $page.page_name != 'index'}
+    <section id="wrapper">
+        {block name='notifications'}
+            {include file='_partials/notifications.tpl'}
+        {/block}
 
-{*    <section id="wrapper">*}
-{*        {block name='notifications'}*}
-{*            {include file='_partials/notifications.tpl'}*}
-{*        {/block}*}
+        {hook h="displayWrapperTop"}
+        <div class="container-fluid main-container_custom d-flex justify-content-center flex-column align-items-center">
+            {if $page.page_name != 'cms'}
+                {block name='breadcrumb'}
+                    {include file='_partials/breadcrumb.tpl'}
+                {/block}
+            {/if}
 
-{*        {hook h="displayWrapperTop"}*}
-{*        <div class="container">*}
-{*            {block name='breadcrumb'}*}
-{*                {include file='_partials/breadcrumb.tpl'}*}
-{*            {/block}*}
+            {block name="left_column"}
+                <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+                    {if $page.page_name == 'product'}
+                        {hook h='displayLeftColumnProduct'}
+                    {else}
+                        {hook h="displayLeftColumn"}
+                    {/if}
+                </div>
+            {/block}
 
-{*            {block name="left_column"}*}
-{*                <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">*}
-{*                    {if $page.page_name == 'product'}*}
-{*                        {hook h='displayLeftColumnProduct'}*}
-{*                    {else}*}
-{*                        {hook h="displayLeftColumn"}*}
-{*                    {/if}*}
-{*                </div>*}
-{*            {/block}*}
+            {block name="content_wrapper"}
+                <div id="content-wrapper" class="js-content-wrapper left-column right-column col-sm-4 col-md-6">
+                    {hook h="displayContentWrapperTop"}
+                    {block name="content"}
+                        <p>Hello world! This is HTML5 Boilerplate.</p>
+                    {/block}
+                    {hook h="displayContentWrapperBottom"}
+                </div>
+            {/block}
 
-{*            {block name="content_wrapper"}*}
-{*                <div id="content-wrapper" class="js-content-wrapper left-column right-column col-sm-4 col-md-6">*}
-{*                    {hook h="displayContentWrapperTop"}*}
-{*                    {block name="content"}*}
-{*                        <p>Hello world! This is HTML5 Boilerplate.</p>*}
-{*                    {/block}*}
-{*                    {hook h="displayContentWrapperBottom"}*}
-{*                </div>*}
-{*            {/block}*}
-
-{*            {block name="right_column"}*}
-{*                <div id="right-column" class="col-xs-12 col-sm-4 col-md-3">*}
-{*                    {if $page.page_name == 'product'}*}
-{*                        {hook h='displayRightColumnProduct'}*}
-{*                    {else}*}
-{*                        {hook h="displayRightColumn"}*}
-{*                    {/if}*}
-{*                </div>*}
-{*            {/block}*}
-{*        </div>*}
-{*        {hook h="displayWrapperBottom"}*}
-{*    </section>*}
-
+            {block name="right_column"}
+                <div id="right-column" class="col-xs-12 col-sm-4 col-md-3">
+                    {if $page.page_name == 'product'}
+                        {hook h='displayRightColumnProduct'}
+                    {else}
+                        {hook h="displayRightColumn"}
+                    {/if}
+                </div>
+            {/block}
+        </div>
+        {hook h="displayWrapperBottom"}
+    </section>
+    {/if}
     <footer id="footer" class="js-footer">
         {block name="footer"}
             {include file="_partials/footer.tpl"}
