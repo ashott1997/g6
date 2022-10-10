@@ -86,9 +86,13 @@
     ul{
       li{
         a{
-          transition: .3s ease-in-out;
+          transition: .3s ease-in-out !important;
+          color: $black !important;
+          padding: 0.625rem !important;
+          font-size: 1rem !important;
+          font-weight: 600 !important;
           &:hover{
-            color: $white;
+            color: $white !important;
           }
         }
 

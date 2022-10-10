@@ -19,7 +19,7 @@ closeBurger.addEventListener('click', () =>  {
 })
 
 const headerNav = document.querySelector('#header')
-const homeBanner = document.querySelector('#home_banner')
+const homeBanner = document.querySelector('.sticky-checker')
 
 const showScrollTop = () =>{
     let distanceToTop =  homeBanner.getBoundingClientRect().top

@@ -3,7 +3,7 @@
         <div class="col-12 col-md-8 p-0">
             <div class="banner position-relative h-100">
                 <div class="back position-absolute h-100 w-100">
-                    <img src="themes/G6_ZABAWKI/assets/img/home.png" alt="" class="w-100 h-100 cover">
+                    <img src="themes/G6_ZABAWKI/assets/img/home.webp" alt="" class="w-100 h-100 cover">
                 </div>
                 <div class="content d-flex flex-column position-relative">
                     {hook h="displayTop"}

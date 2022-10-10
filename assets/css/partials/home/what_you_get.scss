@@ -83,18 +83,36 @@
       }
 
       .content{
+
         transition: .3s ease-in-out;
+
+        .img-wrapper{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
         h2{
-          max-width: 125px;
+          //max-width: 125px;
+          width: 100%;
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
           line-height: 109.9%;
-          text-align: center;
+          //text-align: center;
           letter-spacing: -0.03em;
           color: $text;
           margin-top: 36px;
+          transition: .3s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
+
+        svg{
+          transition: .3s ease-in-out;
+        }
+
 
         svg path{
           transition: .3s ease-in-out;
@@ -132,15 +150,21 @@
         .content{
           position: relative;
           z-index: 2;
-          align-items: flex-start !important;
+          //align-items: flex-start !important;
+
+          .img-wrapper{
+            transform: translateX(-40%);
+
+          }
 
           svg path{
             fill: $white;
           }
 
           h2{
-            text-align: left !important;
+            //text-align: left !important;
             color: $white;
+            transform: translateX(-40%);
           }
 
           .text-icon{

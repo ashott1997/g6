@@ -9,7 +9,7 @@
                 <div class="img-wrapper">
                     {include file="themes/G6_ZABAWKI/assets/svg/info_icons/1.svg"}
                 </div>
-                <h2 class="text-uppercase">Dogodna dostawa 24h</h2>
+                <h2 class="text-uppercase">Dogodna <br> dostawa 24h</h2>
                 <div class="text-icon d-flex align-items-center justify-content-between">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="icon overflow-hidden">
@@ -26,7 +26,7 @@
                 <div class="img-wrapper">
                     {include file="themes/G6_ZABAWKI/assets/svg/info_icons/2.svg"}
                 </div>
-                <h2 class="text-uppercase">Wypożycz zanim kupisz</h2>
+                <h2 class="text-uppercase">Wypożycz <br> zanim kupisz</h2>
                 <div class="text-icon d-flex align-items-center justify-content-between">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="icon w-0 overflow-hidden">
@@ -43,7 +43,7 @@
                 <div class="img-wrapper">
                     {include file="themes/G6_ZABAWKI/assets/svg/info_icons/3.svg"}
                 </div>
-                <h2 class="text-uppercase">Przyjazne zwroty</h2>
+                <h2 class="text-uppercase">Przyjazne <br> zwroty</h2>
                 <div class="text-icon d-flex align-items-center justify-content-between">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="icon w-0 overflow-hidden">
@@ -60,7 +60,7 @@
                 <div class="img-wrapper">
                     {include file="themes/G6_ZABAWKI/assets/svg/info_icons/4.svg"}
                 </div>
-                <h2 class="text-uppercase">Bezpieczne płatności</h2>
+                <h2 class="text-uppercase">Bezpieczne <br> płatności</h2>
                 <div class="text-icon d-flex align-items-center justify-content-between">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="icon w-0 overflow-hidden">
@@ -77,7 +77,7 @@
                 <div class="img-wrapper">
                     {include file="themes/G6_ZABAWKI/assets/svg/info_icons/5.svg"}
                 </div>
-                <h2 class="text-uppercase">Wsparcie doradcy</h2>
+                <h2 class="text-uppercase">Wsparcie <br> doradcy</h2>
                 <div class="text-icon d-flex align-items-center justify-content-between">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="icon w-0 overflow-hidden">
@@ -94,7 +94,7 @@
                 <div class="img-wrapper">
                     {include file="themes/G6_ZABAWKI/assets/svg/info_icons/6.svg"}
                 </div>
-                <h2 class="text-uppercase">Social media</h2>
+                <h2 class="text-uppercase">Social <br> media</h2>
                 <div class="text-icon d-flex align-items-center justify-content-between">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="icon w-0 overflow-hidden">

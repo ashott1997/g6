@@ -19,7 +19,9 @@
                 {renderLogo}
             </div>
             <div class="col-md-4 d-flex justify-content-center justify-content-md-end nav-right align-items-end order-2 mt-3 mt-md-0">
-                <a href="{$urls.base_url}content/9-b2b" class="b2b link">B2B</a>
+                {if !$customer.is_logged}
+                    <a href="{$urls.base_url}content/9-b2b" class="b2b link">B2B</a>
+                {/if}
 
 
                 {hook h='displayNav2'}

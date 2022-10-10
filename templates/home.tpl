@@ -6,7 +6,7 @@
     text="Unikatowe ręcznie wykonane, drewniane zabawki"
     cat_name="Kategoria 1"
     cat_link="#"
-    pic="themes/G6_ZABAWKI/assets/img/baby/1.png"
+    pic="themes/G6_ZABAWKI/assets/img/baby/1.webp"
     left_color="#40262B"
     text_color="#40262B"
     reverse='false'
@@ -28,7 +28,7 @@
     text="Drewniane zabawki marek Premium"
     cat_name="Kategoria 2"
     cat_link="#"
-    pic="themes/G6_ZABAWKI/assets/img/baby/2.png"
+    pic="themes/G6_ZABAWKI/assets/img/baby/2.webp"
     left_color="#5D7E9D"
     text_color="#375674"
     reverse='true'
@@ -49,7 +49,7 @@
     text="Tablice i książeczki sensoryczne"
     cat_name="Kategoria 9"
     cat_link="#"
-    pic="themes/G6_ZABAWKI/assets/img/baby/3.png"
+    pic="themes/G6_ZABAWKI/assets/img/baby/3.webp"
     left_color="#40262B"
     text_color="#40262B"
     reverse='false'
@@ -68,7 +68,7 @@
     text="Popularne"
     cat_name="Kategoria 2"
     cat_link="#"
-    pic="themes/G6_ZABAWKI/assets/img/baby/4.png"
+    pic="themes/G6_ZABAWKI/assets/img/baby/4.webp"
     left_color="#5D7E9D"
     text_color="#375674"
     reverse='true'

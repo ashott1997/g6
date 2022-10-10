@@ -47,7 +47,9 @@
 
     <header id="header">
         {include file="_partials/navigation.tpl"}
+
     </header>
+    <div class="sticky-checker"></div>
     {block name='header'}
         {if $page.page_name == 'index'}
             {include file="_partials/home-header.tpl"}

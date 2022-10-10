@@ -34,7 +34,7 @@
     {block name='cms_content'}
       {$cms.content nofilter}
       {if $cms.id ==9}
-        <form action="{$urls.base_url}b2b.php" method="POST">
+        <form class="b2b-form" link-to="{$urls.base_url}b2b.php">
           <div class="form-group">
             <label for="name">Imię i nazwisko</label>
             <input type="text" autocomplete="name" name="name" id="name" class="form-control" required>
@@ -55,7 +55,8 @@
             <label for="nip">NIP</label>
             <input type="text" name="nip" autocomplete="nip" id="nip" class="form-control" required>
           </div>
-          <input type="submit" value="Wyślij" class="btn btn-success mt-2 text-center">
+          <span class="btn btn-success mt-2">Wyślij</span>
+          <div class="alert alert-success mt-2 d-none">Dziękujemy za wiadomość. </div>
         </form>
       {/if}
     {/block}

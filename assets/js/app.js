@@ -27,7 +27,7 @@ closeBurger.addEventListener('click', function () {
   burgerMenu.classList.remove('active-burger-menu'); // html.style.overflowY = 'unset'
 });
 var headerNav = document.querySelector('#header');
-var homeBanner = document.querySelector('#home_banner');
+var homeBanner = document.querySelector('.sticky-checker');
 
 var showScrollTop = function showScrollTop() {
   var distanceToTop = homeBanner.getBoundingClientRect().top;
